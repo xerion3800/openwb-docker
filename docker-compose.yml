@@ -1,7 +1,7 @@
 version: "2.4"
 services:
   openwb:
-    image: xerion3800/openwb:latest
+    image: ingmarstein/openwb:latest
     init: true
     container_name: openwb
     network_mode: host
