@@ -29,7 +29,7 @@ RUN useradd -ms /bin/bash pi \
 * * * * * sleep 40 && /var/www/html/openWB/regel.sh >> /var/log/openWB.log 2>&1\n\
 * * * * * sleep 50 && /var/www/html/openWB/regel.sh >> /var/log/openWB.log 2>&1\n" | crontab -u pi - \
     && echo "pi ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers.d/010_pi-nopasswd \
-    # && /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xerion3800/openWB/master/openwb-install.sh)"
+    && /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xerion3800/openWB/master/openwb-install-docker.sh)"
 #USER pi
 #WORKDIR /home/pi
 ENTRYPOINT ["/entrypoint.sh"]
