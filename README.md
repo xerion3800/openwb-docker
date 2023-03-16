@@ -17,7 +17,7 @@ Choose one of the methods below to create and run a container with openWB:
 Using Docker:
 
 ```shell
-docker run --network host -d -e WEB_PORT=8888 --cap-add=NET_ADMIN --name openwb --restart always -v "$(pwd)/openwb.conf:/var/www/html/openWB/openwb.conf" ingmarstein/openwb
+docker run --network host -d -e WEB_PORT=8888 --cap-add=NET_ADMIN --name openwb --restart always -v "$(pwd)/openwb.conf:/var/www/html/openWB/openwb.conf" xerion3800/openwb
 ```
 
 Using Docker Compose: adjust configuration in `docker-compose.yml` and run
