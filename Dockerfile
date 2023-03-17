@@ -17,6 +17,7 @@ RUN useradd -ms /bin/bash pi \
 		sudo \
     && rm -r /var/lib/apt/lists/* \
 	&& c_rehash \
+	&& pip install requests \
 # https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=923479
 # https://github.com/balena-io-library/base-images/issues/562
 # should be fixed with openssl 1.1.1i-3 (buster is at 1.1.1d as of 2021-05-07)
